@@ -1,0 +1,4 @@
+/target
+.kate-swp
+/log
+Cargo.lock

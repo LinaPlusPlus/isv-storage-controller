@@ -1,0 +1,21 @@
+[package]
+name = "Isv-Storage"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# SQLite
+sqlx = { version = "0.7", features = ["sqlite", "runtime-tokio", "macros"] }
+
+# Web server
+tokio = { version = "1", features = ["full"] }
+warp = { version = "0.4", features = ["server"] }
+
+# Logs and Config
+envy = "0.4.2"
+tracing-appender = "0.2"
+
+serde = { version = "1.0.219", features = ["serde_derive"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3", default-features = false, features = ["alloc","ansi"] }
